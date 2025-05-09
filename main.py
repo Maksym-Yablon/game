@@ -5,20 +5,6 @@ import sys
 import sounddevice as sd
 from scipy.io import wavfile
 from colorama import init, Fore, Style
-import threading
-
-def emoji_animation(emojis, delay=0.1, repeat=1):
-    """Анімація з емодзі, які змінюються почергово."""
-    for _ in range(repeat):  # Кількість повторів анімації
-        for emoji in emojis:
-            print(f"\r{emoji}", end="", flush=True)  # Виводимо емодзі в одному рядку
-            time.sleep(delay)
-    print()  # Перехід на новий рядок після завершення анімації
-
-# Використання функції
-emojis = ["🕛", "🕧", "🕐", "🕜", "🕑", "🕝", "🕒", "🕞", "🕓", "🕟", "🕔", "🕠", "🕕", "🕡", "🕖", "🕢", "🕗", "🕣", "🕘", "🕤", "🕙", "🕥", "🕚", "🕦"]
-
-
 
 def start_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -125,14 +111,6 @@ def games():
         
 
 
-
-    
-    
-
-     
-
-
-         
 def menu():
     choice = 0
     sound_on = True
